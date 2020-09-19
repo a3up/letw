@@ -1,7 +1,7 @@
 ### Objectives
 The goal is providing the students with skills in the most significant languages and Web technologies in the current technological context or that were breakthroughs in the Web's evolutionary process.
 
-### Learning outcomes and competences
+### Learning Outcomes and Competences
 At the end of this course, students must be able to:
 - Create a document structured using HTML.
 - Use CSS to layout and design a web page.
