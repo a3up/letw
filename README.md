@@ -22,6 +22,6 @@ At the end of this course, students must be able to:
 - XML and XML tools
 
 ### Literature
-- Elizabeth Castro, Bruce Hyslop; HTML5 & CSS3: Visual QuickStart Guide (Visual QuickStart Guides), Peachpit Press, 2011. ISBN: 0-321-71961-1
-- David Flanagan; JavaScript: The Definitive Guide, O'Reilly Media, 2011. ISBN: 0-596-80552-7
+- Elizabeth Castro, Bruce Hyslop; HTML5 & CSS3: Visual QuickStart Guide (Visual QuickStart Guides). ISBN: 0-321-71961-1
+- David Flanagan; JavaScript: The Definitive Guide. ISBN: 0-596-80552-7
 - Anders Moller and Michael I. Schwartzbach; An introduction to XML and web technologies. ISBN: 0-321-26966-7
