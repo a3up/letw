@@ -13,13 +13,14 @@ At the end of this course, students must be able to:
 - Understand the relation between XML and web development as well as using various XML tools like XPath.
 
 ### Program
-- HTML 5 and CSS 3
-- The PHP language
-- Client-side Javascript
+- [HTML 5](/html)
+- [CSS 3](/css)
+- [The PHP language](/php)
+- [Client-side Javascript](/javascript)
 - The HTTP protocol
 - Web Security
-- Regular Expressions
-- XML and XML tools
+- [Regular Expressions](/regex)
+- [XML and XML tools](/xml)
 
 ### Literature
 - Elizabeth Castro, Bruce Hyslop; HTML5 & CSS3: Visual QuickStart Guide. ISBN: 0-321-71961-1
