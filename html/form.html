@@ -19,6 +19,11 @@ Don’t forget that:
 <head>
     <meta charset="UTF-8">
     <title>Form</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
 </head>
 <body>
 <!-- Try to submit the form and verify what happens in the URL bar using post and get as the form methods -->
@@ -26,19 +31,16 @@ Don’t forget that:
     <label>
         Name: <input type="text" name="name">
     </label>
-    <br><br>
 
-    Age: <br>
-    <label><input type="radio" name="age" value="<18"> &lt;18 </label><br>
-    <label><input type="radio" name="age" value="19-35"> 19-35 </label><br>
-    <label><input type="radio" name="age" value="36-48"> 36-48 </label><br>
-    <label><input type="radio" name="age" value=">49"> &gt;49 </label><br>
-    <br>
+    Age:
+    <label><input type="radio" name="age" value="<18"> &lt;18 </label
+    <label><input type="radio" name="age" value="19-35"> 19-35 </label>
+    <label><input type="radio" name="age" value="36-48"> 36-48 </label>
+    <label><input type="radio" name="age" value=">49"> &gt;49 </label>
 
     <label>
         Profession: <input type="text" name="profession">
     </label>
-    <br><br>
 
     <label>
         Country:
@@ -239,21 +241,18 @@ Don’t forget that:
             <option value="ZW">Zimbabwe</option>
         </select>
     </label>
-    <br><br>
 
-    Interests: <br>
-    <label><input type="checkbox" name="interests" value="sports"> Sports </label><br>
-    <label><input type="checkbox" name="interests" value="politics"> Politics </label><br>
-    <label><input type="checkbox" name="interests" value="technology"> Technology </label><br>
-    <label><input type="checkbox" name="interests" value="linguistics"> Linguistics </label><br>
-    <label><input type="checkbox" name="interests" value="entertainment"> Entertainment </label><br>
-    <br>
+    Interests:
+    <label><input type="checkbox" name="interests" value="sports"> Sports </label
+    <label><input type="checkbox" name="interests" value="politics"> Politics </label
+    <label><input type="checkbox" name="interests" value="technology"> Technology </label
+    <label><input type="checkbox" name="interests" value="linguistics"> Linguistics </label
+    <label><input type="checkbox" name="interests" value="entertainment"> Entertainment </label
 
     <label>
-        How did you found out about the site? <br>
+        How did you found out about the site?
         <textarea rows="4" cols="40" name="info"></textarea>
     </label>
-    <br><br>
 
     <input type="submit" value="Submit">
 </form>
