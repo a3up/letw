@@ -1,6 +1,5 @@
 /* Grid */
 body {
-    font-size: 100%;
     width: 60em;
     margin: 0 auto;
     display: grid;
@@ -14,13 +13,12 @@ body {
 /* Header */
 body > header {
     grid-area: header;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
 }
 
 body > header h1 {
-    width: 100%;
+    grid-column-end: span 2;
 }
 
 /* Nav */
