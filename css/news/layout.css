@@ -1,0 +1,62 @@
+/* Grid */
+body {
+    font-size: 100%;
+    width: 60em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    grid-template-areas: "header header"
+                         "menu   related"
+                         "news   related"
+                         "footer related";
+}
+
+/* Header */
+body > header {
+    grid-area: header;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body > header h1 {
+    width: 100%;
+}
+
+/* Nav */
+#menu {
+    grid-area: menu;
+}
+
+#menu ul {
+    display: flex;
+}
+
+#menu li {
+    flex-grow: 1;
+}
+
+/* Aside */
+#related {
+    grid-area: related;
+}
+
+/* Section */
+#news {
+    grid-area: news;
+    margin-right: 1em;
+}
+
+#news footer {
+    display: flex;
+}
+
+#news footer .author {
+    flex-grow: 1;
+}
+
+/* Footer */
+body > footer {
+    grid-area: footer;
+    margin-right: 1em;
+}
