@@ -1,0 +1,85 @@
+@media screen and (max-width: 60em) {
+    body {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    /* Aside */
+    #related {
+        display: none;
+    }
+
+    /* Section */
+    #news {
+        margin: 0;
+    }
+
+    /* Footer */
+    body > footer {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    /* Header */
+    body > header h2 {
+        display: none;
+    }
+
+    /* Nav */
+    #menu {
+        background-color: var(--main-gray);
+    }
+
+    #menu label {
+        margin: 1em;
+        display: block;
+        color: white;
+    }
+
+    #menu input + label:before {
+        content: "\2630";
+    }
+
+    #menu input:checked + label:before {
+        content: "\2715";
+    }
+
+    #menu ul {
+        display: block;
+    }
+
+    #menu input ~ ul li {
+        padding: 0;
+        height: 0;
+        color: #EDEFF0;
+        transition: padding 0.1s, height 0.2s, color 0.1s;
+    }
+
+    #menu input:checked ~ ul li {
+        padding: 1em;
+        color: black;
+        height: 1em;
+        transition: padding 0.1s, height 0.2s, color 0.5s;
+    }
+
+    #menu li {
+        background-color: #EDEFF0;
+        border-top-width: 0;
+        border-left: 5px solid;
+    }
+
+    /* Section */
+    #news article > header {
+        position: static;
+        width: 100%;
+        font-size: 0.8em;
+        padding: 1em;
+        text-shadow: 0 0 0;
+        color: black;
+    }
+
+    #news > article > p:nth-of-type(1)::first-letter {
+        font-size: 1em;
+    }
+}

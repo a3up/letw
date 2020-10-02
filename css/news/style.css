@@ -118,10 +118,17 @@ body > header #signup a:last-child {
 }
 
 /* Section */
+#news {
+    margin: 1em 1em 1em 0;
+}
+
 #news article {
     position: relative;
-    margin: 1em 0;
     background-color: white;
+}
+
+#news article + article {
+    margin-top: 1em;
 }
 
 #news article > header {
