@@ -1,0 +1,62 @@
+#comments {
+    padding: 1em;
+}
+
+.comment {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.comment .user {
+    font-style: italic;
+}
+
+.comment .user:after {
+    content: " said:";
+    font-style: normal;
+}
+
+.comment > span {
+    margin: 1em 0;
+}
+
+.comment p {
+    background-color: var(--background-color);
+    padding: 1em;
+    grid-column-end: span 2;
+}
+
+.comment p:before {
+    content: "\201C";
+    color: lightgray;
+    font-size: 3em;
+    position: relative;
+    top: 0.3em;
+    line-height: 0.5em;
+}
+
+#comments > form {
+    background-color: var(--background-color);
+    margin: 1em 0;
+}
+
+#comments > form > h2 {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+#comments > form > label {
+    width: 100%;
+}
+
+#comments > form > label > textarea {
+    width: 100%;
+}
+
+#comments > form > input {
+    padding: 1em;
+    border: 0;
+    color: white;
+    background-color: black;
+    margin: 1em 0;
+}

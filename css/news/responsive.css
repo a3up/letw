@@ -51,7 +51,7 @@
 
     #menu input ~ ul li {
         padding: 0;
-        height: 0;
+        max-height: 0;
         color: #EDEFF0;
         transition: padding 0.1s, height 0.2s, color 0.1s;
     }
@@ -59,7 +59,7 @@
     #menu input:checked ~ ul li {
         padding: 1em;
         color: black;
-        height: 1em;
+        max-height: none;
         transition: padding 0.1s, height 0.2s, color 0.5s;
     }
 

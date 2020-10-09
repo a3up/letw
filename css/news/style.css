@@ -1,4 +1,5 @@
 :root {
+    --background-color: #EDEFF0;
     --main-gray: #2A2F33;
     --main-blue: #046DD5;
     --main-red: #F4655F;
@@ -13,11 +14,10 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
 }
 
 body {
-    background-color: #EDEFF0;
+    background-color: var(--background-color);
     font-family: Verdana, sans-serif;
 }
 
@@ -122,16 +122,16 @@ body > header #signup a:last-child {
     margin: 1em 1em 1em 0;
 }
 
-#news article {
+#news > article {
     position: relative;
     background-color: white;
 }
 
-#news article + article {
+#news > article + article {
     margin-top: 1em;
 }
 
-#news article > header {
+#news > article > header {
     position: absolute;
     top: 1em;
     left: 1em;
@@ -145,7 +145,7 @@ body > header #signup a:last-child {
     width: 100%;
 }
 
-#news p {
+#news > article > p {
     margin: 1em;
 }
 
