@@ -1,0 +1,45 @@
+#register, #login {
+    grid-area: news;
+}
+
+#register > h1, #login > h1 {
+    padding: 1em;
+    text-align: center;
+}
+
+#register > form, #login > form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1em 2em;
+    width: 18em;
+    margin: auto;
+}
+
+#register > form > label, #login > form > label {
+    margin: 1em 0;
+}
+
+#register > form > label > input, #login > form > label > input {
+    margin-top: 1em;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+#register > form > input, #login > form > input {
+    padding: 1em;
+    border: 0;
+    color: white;
+    background-color: black;
+    margin-top: 1em;
+    width: min-content;
+
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 60em) {
+    #register, #login {
+        background-color: white;
+    }
+}
