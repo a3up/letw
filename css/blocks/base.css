@@ -1,40 +1,40 @@
 body {
-  width: 60em;
-  margin: 0 auto;
+    width: 60em;
+    margin: 0 auto;
 }
 
 section {
-  padding: 2em;
-  margin: 1em;
+    padding: 2em;
+    margin: 1em;
 }
 
 #green {
-  background-color: #baffc9;
+    background-color: #baffc9;
 }
 
 #orange {
-  background-color: #ffdfba;
+    background-color: #ffdfba;
 }
 
 #yellow {
-  background-color:   #ffffba;
+    background-color: #ffffba;
 }
 
 #red {
-  background-color:   #ffb3ba;
+    background-color: #ffb3ba;
 }
 
 #blue {
-  background-color:   #bae1ff;
+    background-color: #bae1ff;
 }
 
-ul { 
-  padding: 0; 
+ul {
+    padding: 0;
 }
 
 li {
-  background-color: white;
-  padding: 1em;
-  display: block;
-  margin: 1em;
+    background-color: white;
+    padding: 1em;
+    display: block;
+    margin: 1em;
 }
