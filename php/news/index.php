@@ -69,7 +69,7 @@
     // Print the articles
     foreach ($articles as $article) {
         echo '<article><header><h1><a href="#">' . $article['title'] . '</a></h1></header>';
-        echo '<img src="https://picsum.photos/600/300" alt="">';
+        echo '<img src="https://picsum.photos/seed/' . $article['id'] . '/600/300" alt="">';
         echo '<p>' . $article['introduction'] . '</p>';
         echo '<p>' . $article['fulltext'] . '</p>';
         echo '<footer>
