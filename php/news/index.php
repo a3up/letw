@@ -104,7 +104,7 @@
         echo '</span>
             <span class="date">' . $string . '</span>
             <a class="comments" href="item.html#comments">' . $article['comments'] . '</a>
-        </footer>';
+        </footer></article>';
     }
     ?>
 </section>
