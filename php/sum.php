@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
@@ -15,5 +14,6 @@ if (isset($_GET['num1']) && isset($_GET['num2'])) {
     echo "<p>$sum</p>";
 }
 ?>
+<a href="form.html">Go back to the form</a>
 </body>
 </html>
