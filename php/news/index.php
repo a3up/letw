@@ -69,7 +69,7 @@
     // Print the articles
     foreach ($articles as $article) {
         echo '<article><header><h1><a href="#">' . $article['title'] . '</a></h1></header>';
-        // echo '<img src="http://lorempixel.com/600/300/business/" alt="">';
+        echo '<img src="https://picsum.photos/600/300" alt="">';
         echo '<p>' . $article['introduction'] . '</p>';
         echo '<p>' . $article['fulltext'] . '</p>';
         echo '<footer>
@@ -79,38 +79,11 @@
             echo '<a href="index.php">#' . $tag . '</a> ';
         }
         echo '</span>
-            <span class="date">' . $article['published'] . '</span>
+            <span class="date">' . time() - $article['published'] . '</span>
             <a class="comments" href="item.html#comments">' . $article['comments'] . '</a>
         </footer>';
     }
     ?>
-    <article>
-        <header>
-            <h1><a href="item.html">Quisque a dapibus magna, non scelerisque</a></h1>
-        </header>
-        <img src="http://lorempixel.com/600/300/business/" alt="">
-        <p>Etiam massa magna, condimentum eu facilisis sit amet, dictum ac purus. Curabitur semper nisl vel libero
-            pulvinar ultricies. Proin dignissim dolor nec scelerisque bibendum. Maecenas a sem euismod, iaculis erat id,
-            convallis arcu. Ut mollis, justo vitae suscipit imperdiet, eros dui laoreet enim, fermentum posuere felis
-            arcu vel urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin
-            blandit ex sit amet suscipit commodo. Duis molestie ligula eu urna tincidunt tincidunt. Mauris posuere
-            aliquet pellentesque. Fusce molestie libero arcu, ut porta massa iaculis sit amet. Fusce varius nisl vitae
-            fermentum fringilla. Pellentesque a cursus lectus.</p>
-        <p>Duis condimentum metus et ex tincidunt, faucibus aliquet ligula porttitor. In vitae posuere massa. Donec
-            fermentum magna sit amet suscipit pulvinar. Cras in elit sapien. Vivamus nunc sem, finibus ac suscipit
-            ullamcorper, hendrerit vitae urna. Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Quisque eget tincidunt orci. Mauris congue ipsum non purus tristique, at venenatis
-            elit pellentesque. Etiam congue euismod molestie. Mauris ex orci, lobortis a faucibus sed, sagittis eget
-            neque.</p>
-        <p>Mauris tincidunt orci congue turpis viverra pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et
-            ultrices posuere cubilia Curae; Quisque rhoncus lorem eget.</p>
-        <footer>
-            <span class="author">Dominic Woods</span>
-            <span class="tags"><a href="index.php">#politics</a> <a href="index.php">#economy</a></span>
-            <span class="date">15m</span>
-            <a class="comments" href="item.html#comments">5</a>
-        </footer>
-    </article>
 </section>
 <footer>
     <p>&copy; Fake News, 2017</p>
