@@ -85,8 +85,24 @@
         $minutes %= 60;
         $days = intdiv($hours, 24);
         $hours %= 24;
+        $months = intdiv($days, 30);
+        $days %= 30;
+        $years = intdiv($months, 12);
+        $months %= 12;
+        $string = 'now';
+        if ($years > 0){
+            $string = $years . 'y';
+        } else if ($months > 0){
+            $string = $months . 'M';
+        } else if ($days > 0){
+            $string = $days . 'd';
+        } else if ($hours > 0){
+            $string = $hours . 'h';
+        } else if ($minutes > 0){
+            $string = $minutes . 'm';
+        }
         echo '</span>
-            <span class="date">' . $days . 'd</span>
+            <span class="date">' . $string . '</span>
             <a class="comments" href="item.html#comments">' . $article['comments'] . '</a>
         </footer>';
     }
