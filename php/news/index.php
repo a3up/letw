@@ -75,7 +75,7 @@
         echo '<footer>
             <span class="author">' . $article['name'] . '</span>
             <span class="tags">';
-        foreach ($article['tags'] as $tag) {
+        foreach (explode(",", $article['tags']) as $tag) {
             echo '<a href="index.php">#' . $tag . '</a> ';
         }
         echo '</span>
