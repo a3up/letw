@@ -79,7 +79,7 @@
             echo '<a href="index.php">#' . $tag . '</a> ';
         }
         echo '</span>
-            <span class="date">' . time() - $article['published'] . '</span>
+            <span class="date">' . date("Y-m-d H:i:s",time() - $article['published']) . '</span>
             <a class="comments" href="item.html#comments">' . $article['comments'] . '</a>
         </footer>';
     }
