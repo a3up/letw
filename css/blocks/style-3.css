@@ -14,6 +14,18 @@ body {
     grid-area: yellow;
 }
 
+#yellow ul {
+    display: flex;
+}
+
+#yellow li:first-child {
+    flex-grow: 3;
+}
+
+#yellow li {
+    flex-grow: 1;
+}
+
 #orange {
     grid-area: orange;
 }
