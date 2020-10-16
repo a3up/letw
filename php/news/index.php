@@ -71,8 +71,13 @@
         echo '<article><header><h1><a href="#">' . $article['title'] . '</a></h1></header>';
         // echo '<img src="http://lorempixel.com/600/300/business/" alt="">';
         echo '<p>' . $article['introduction'] . '</p>';
-        echo '<p>' . $article['full_text'] . '</p>';
-        echo '<footer><span class="author">' . $article['users.username'] . '</span></footer>';
+        echo '<p>' . $article['fulltext'] . '</p>';
+        echo '<footer>
+            <span class="author">' . $article['users.username'] . '</span>
+            <span class="tags"><a href="index.php">#politics</a> <a href="index.php">#economy</a></span>
+            <span class="date">15m</span>
+            <a class="comments" href="item.html#comments">5</a>
+        </footer>';
     }
     ?>
     <article>
