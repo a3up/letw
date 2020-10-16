@@ -1,0 +1,36 @@
+body {
+    display: grid;
+    grid-template-areas: "yellow yellow"
+                         "blue   orange"
+                         "blue   red"
+                         "blue   green";
+}
+
+#green {
+    grid-area: green;
+}
+
+#yellow {
+    grid-area: yellow;
+}
+
+#orange {
+    grid-area: orange;
+}
+
+#red {
+    grid-area: red;
+}
+
+#red ul {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#red li {
+    flex-grow: 1;
+}
+
+#blue {
+    grid-area: blue;
+}

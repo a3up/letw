@@ -1,0 +1,17 @@
+body {
+    display: flex;
+}
+
+#green {
+    order: 2;
+}
+
+#orange {
+    flex-grow: 2;
+    order: 3;
+}
+
+#blue {
+    background-color: #bae1ff;
+    order: 4;
+}
