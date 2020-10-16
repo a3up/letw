@@ -79,11 +79,11 @@
             echo '<a href="index.php">#' . $tag . '</a> ';
         }
         $seconds = time() - $article['published'];
-        $minutes = $seconds / 60;
+        $minutes = intdiv($seconds, 60);
         $seconds %= 60;
-        $hours = $minutes / 60;
+        $hours = intdiv($minutes, 60);
         $minutes %= 60;
-        $days = $hours / 24;
+        $days = intdiv($hours, 24);
         $hours %= 24;
         echo '</span>
             <span class="date">' . $days . 'd</span>
