@@ -73,10 +73,14 @@
         echo '<p>' . $article['introduction'] . '</p>';
         echo '<p>' . $article['fulltext'] . '</p>';
         echo '<footer>
-            <span class="author">' . $article['users.username'] . '</span>
-            <span class="tags"><a href="index.php">#politics</a> <a href="index.php">#economy</a></span>
-            <span class="date">15m</span>
-            <a class="comments" href="item.html#comments">5</a>
+            <span class="author">' . $article['name'] . '</span>
+            <span class="tags">';
+        foreach ($article['tags'] as $tag) {
+            echo '<a href="index.php">#' . $tag . '</a> ';
+        }
+        echo '</span>
+            <span class="date">' . $article['published'] . '</span>
+            <a class="comments" href="item.html#comments">' . $article['comments'] . '</a>
         </footer>';
     }
     ?>
