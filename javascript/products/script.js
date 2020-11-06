@@ -56,3 +56,61 @@ function alert_after_submit() {
         event.preventDefault()
     })
 }
+
+// ----------------------------------------------------------------
+// exercise 6
+// ----------------------------------------------------------------
+
+function update_total(add) {
+    let total = document.getElementById('total')
+    total.innerHTML = parseInt(total.innerHTML) + add
+}
+
+// adds a listener that adds the element to the table when the form is submitted
+function add_to_table_after_submit() {
+    let form = document.getElementsByTagName('form')[0]
+    form.addEventListener('submit', function () {
+        // create table cells
+        let cells = []
+        for (let i = 0; i < 3; i++)
+            cells.push(document.createElement('td'))
+
+        // get the values of the inputs
+        let quantity = parseInt(this.querySelector('label input[name="quantity"]').value)
+
+        // assign the form values to the cells
+        cells[0].innerHTML = this.querySelector('label input[name="description"]').value
+        cells[1].innerHTML = '<input value="' + quantity + '">'
+        cells[2].innerHTML = '<input type="button" value="Remove">'
+
+        // append cells to row
+        let row = document.createElement('tr')
+        for (let i = 0; i < 3; i++)
+            row.append(cells[i])
+
+        // append row to products table
+        let products = document.getElementById('products')
+        products.append(row)
+
+        // update total
+        update_total(quantity)
+
+        //
+        cells[1].addEventListener('change', function () {
+            let new_quantity = parseInt(cells[1].querySelector('input').value)
+            update_total(new_quantity - quantity)
+            quantity = new_quantity
+        })
+
+        // when the button 'remove' is clicked the row is removed
+        cells[2].addEventListener('click', function () {
+            row.remove()
+            update_total(-quantity)
+        })
+
+        // prevent default action
+        event.preventDefault()
+    })
+}
+
+add_to_table_after_submit()
